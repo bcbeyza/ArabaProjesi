@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public List<Brand> GetBrandsByBrandId(int id)
         {
-            return _brandDal.GetAll(b => b.BrandId == id);
+            return _brandDal.GetAll(b => b.Id == id);
         }
     }
 }
