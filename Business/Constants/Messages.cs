@@ -24,5 +24,7 @@ namespace Business.Constants
         public static string RentalsListed="Kiralamalar listelendi.";
         public static string CustomersListed="Müşteriler listelendi.";
         public static string CustomerAdded="Müşteri eklendi";
+        public static string ColorUpdated="Renk güncellendi.";
+        public static string BrandUpdated="Araba markası güncellendi.";
     }
 }

@@ -13,6 +13,7 @@ namespace Business.Abstract
         IDataResult<List<Color>> GetAllColorsByColorId(int id);
 
         IResult Add(Color color);
+        IResult Update(Color color);
 
 
     }
