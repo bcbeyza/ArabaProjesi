@@ -30,10 +30,23 @@ namespace ConsoleUI
             Console.WriteLine("*************************");
 
             ColorManager colorManager = new ColorManager(new EfColorDal());
-            foreach (var color in colorManager.GetColorsByColorId(1))
+
+
+            var result2 = colorManager.GetAllColorsByColorId(1);
+
+            if (result2.Success == true)
             {
-                Console.WriteLine(color.ColorName);
+                foreach (var color in result2.Data)
+                {
+                    Console.WriteLine(color.ColorName);
+                }
+
             }
+            else
+            {
+                Console.WriteLine(result2.Message);
+            }
+
 
 
             Console.ReadLine();
