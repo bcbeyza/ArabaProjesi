@@ -27,7 +27,7 @@ namespace ConsoleUI
             
 
 
-            Console.WriteLine("*************************");
+            Console.WriteLine("*****************************");
 
             ColorManager colorManager = new ColorManager(new EfColorDal());
 
